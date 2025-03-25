@@ -36,11 +36,6 @@ public class MyController {
         return "home";
     }
 
-    @ModelAttribute
-    String storeName(){
-        return "";
-    }
-
     @PostMapping("/checkLogin")
     ModelAndView check(@ModelAttribute Users user, Model model){
         if(userService.checkLogin(user)){
