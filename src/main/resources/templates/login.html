@@ -5,6 +5,7 @@
     <title>Login</title>
 </head>
 <body>
+<h3 th:if="${errorMessage}">Incorrect Username or Password</h3>
 <form action="/checkLogin" method="post">
     <label>
         Username: <input type="text" name="name">
